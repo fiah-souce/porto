@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afifatul Luthfiah Portfolio</title>
+
+  <!-- Link ke file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Afifatul Luthfiah</h1>
+  <div class="nav-toggle" id="navToggle">☰</div>
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+  <section id="home" class="hero">
+    <img src="image/aku2.jpg" alt="Profile Picture" />
+    <h2>Hello, I'm <span style="color: var(--primary)">Afifatul Luthfiah</span></h2>
+    <p>Mahasiswa | Part-time Mentor | Ilustrator</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>About Me</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>My Activity</h3>
+        <a href="projects.html#activity" style="color: var(--text);">There is my activity.</a>
+      </div>
+
+      <div class="card">
+        <h3>My Friends</h3>
+      <a href="projects.html#friends" style="color: var(--text);">There is my lovely friends.</a>
+      </div>
+
+      <div class="card">
+        <h3>My Art</h3>
+       <a href="https://www.instagram.com/ehe_uyaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: var(--text);">There is my mini art.</a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Hii, yang penasaran contact ku ini yaaa!!</p>
+    <p>Email: <a href="mailto:afifatul0509@email.com">afifatul0509@email.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6288287828940">Afifatul Luthfiah</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Afifatul Luthfiah. A1F025031.
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+  </script>
+</body>
+</html>
